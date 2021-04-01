@@ -5,8 +5,7 @@ import { rhythm } from '../utils/typography'
 
 import './index.scss'
 
-export const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+export const Layout = ({ title, children }) => {
 
   return (
     <React.Fragment>

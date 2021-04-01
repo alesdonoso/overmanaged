@@ -30,6 +30,7 @@ export default ({ data, pageContext, location }) => {
       <Head title={postTitle} description={post.excerpt} />
       <PostTitle title={postTitle} />
       <PostDate date={date} />
+      <span>{post.fields.readingTime.text}</span>
       <PostContainer html={post.html} />
       <SocialShare title={postTitle} author={author} />
       <Bio />
@@ -45,10 +46,6 @@ export const pageQuery = graphql`
         title
         author
         siteUrl
-        comment {
-          disqusShortName
-          utterances
-        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -58,6 +55,12 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+      }
+      fields {
+        slug
+        readingTime {
+          text
+        }
       }
     }
   }
