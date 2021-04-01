@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 
+import './index.scss'
+
 export const SubscribeForm = () => {
   const FORM_URL = `https://getform.io/f/a47d62f7-0f6e-4067-8fde-a83299f010be`
 
@@ -35,27 +37,25 @@ export const SubscribeForm = () => {
   }
   return (
     <div>
-      <div class="col-md-8 mt-5">
+      <div class="form">
         <h3>Getform.io Gatsby Form Example</h3>
         <form onSubmit={handleOnSubmit} autocomplete="off">
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              required="required"
-              aria-describedby="emailHelp"
-              placeholder="Enter email"
-            />
-            <button
-              type="submit"
-              class="btn btn-primary"
-              disabled={serverState.submitting}
-            >
-              Submit
-            </button>
-          </div>
+          <input
+            type="email"
+            name="email"
+            class="form-input"
+            id="inputEmail"
+            required="required"
+            aria-describedby="emailHelp"
+            placeholder="Your email address"
+          />
+          <button
+            type="submit"
+            class="form-button"
+            disabled={serverState.submitting}
+          >
+            Subscribe
+          </button>
 
           {serverState.status && (
             <p className={!serverState.status.ok ? 'errorMsg' : ''}>

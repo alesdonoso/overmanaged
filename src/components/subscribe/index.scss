@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.form {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  margin: 2rem 0;
+  background: #ffebf9;
+  border-radius: 20px;
+  font-family: Inter, sans-serif;
+  height: 250px;
+
+  h3 {
+    margin: 0;
+  }
+
+  form {
+    margin: 0;
+
+    input {
+      border: none;
+      border-radius: 6px;
+      padding: 0.6rem;
+      margin: 0.5rem 0;
+      &:focus,
+      &:active {
+        outline: none;
+        background: $light-category-border-color;
+      }
+    }
+
+    button {
+      border: none;
+      border-radius: 6px;
+      padding: 0.7rem;
+      font-weight: 600;
+      background: $navigator-background-color;
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        outline: none;
+        background: $dark-link-color;
+      }
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+  }
+}
