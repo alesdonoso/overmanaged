@@ -5,11 +5,7 @@ module.exports = {
   introduction: `A Product Management blog thought to underline things.`,
   siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
   icon: `content/assets/felog.png`, // Add your favicon
-  keywords: [`blog`],
-  comment: {
-    disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
-  },
+  keywords: [`blog`, `product`, `management`],
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
   },
