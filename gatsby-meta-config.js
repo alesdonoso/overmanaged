@@ -7,7 +7,7 @@ module.exports = {
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [`blog`, `product`, `management`],
   configs: {
-    countOfInitialPost: 10, // Config your initial count of post
+    countOfInitialPost: 5, // Config your initial count of post
   },
   ga: '0', // Add your google analytics tranking ID
 }

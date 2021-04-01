@@ -9,6 +9,7 @@ import { PostContainer } from '../components/post-container'
 import { SocialShare } from '../components/social-share'
 import { Bio } from '../components/bio'
 import { PostNavigator } from '../components/post-navigator'
+import { SubscribeForm } from '../components/subscribe'
 import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
@@ -36,6 +37,7 @@ export default ({ data, pageContext, location }) => {
       </div>
       <PostContainer html={post.html} />
       <SocialShare title={postTitle} author={author} />
+      <SubscribeForm />
       <Bio />
       <PostNavigator pageContext={pageContext} />
     </Layout>

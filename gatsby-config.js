@@ -57,7 +57,7 @@ module.exports = {
           `gatsby-remark-smartypants`,
           `gatsby-remark-autolink-headers`,
           `gatsby-remark-emoji`,
-          `gatsby-remark-reading-time`
+          `gatsby-remark-reading-time`,
         ],
       },
     },
@@ -67,6 +67,14 @@ module.exports = {
         trackingId: metaConfig.ga,
         head: true,
         anonymize: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://gmail.us1.list-manage.com/subscribe/post?u=0829f84653cc4094c27178a21&amp;id=3b455faed0', // string; add your MC list endpoint here; see instructions below
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
     },
     {
