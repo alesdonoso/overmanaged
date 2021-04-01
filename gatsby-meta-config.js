@@ -4,13 +4,6 @@ module.exports = {
   author: `alesdonoso`,
   introduction: `A Product Management blog thought to underline things.`,
   siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
-  social: {
-    twitter: ``, // Your Twitter account
-    github: ``, // Your GitHub account
-    medium: ``, // Your Medium account
-    facebook: ``, // Your Facebook account
-    linkedin: ``, // Your LinkedIn account
-  },
   icon: `content/assets/felog.png`, // Add your favicon
   keywords: [`blog`],
   comment: {
@@ -19,9 +12,6 @@ module.exports = {
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
-  },
-  sponsor: {
-    buyMeACoffeeId: 'jbee',
   },
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2

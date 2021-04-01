@@ -24,33 +24,14 @@ export const Bio = () => (
               />
               <div className="author-name">
                 <span className="author-name-prefix">Written by</span>
-                <a href="https://twitter.com/alesdonoso" target="_blank" className="author-name-content">
+                <a
+                  href="https://twitter.com/alesdonoso"
+                  target="_blank"
+                  className="author-name-content"
+                >
                   <span>@{author}</span>
                 </a>
                 <div className="author-introduction">{introduction}</div>
-                <p className="author-socials">
-                  {social.github && (
-                    <a href={`https://github.com/${social.github}`}>GitHub</a>
-                  )}
-                  {social.medium && (
-                    <a href={`https://medium.com/${social.medium}`}>Medium</a>
-                  )}
-                  {social.twitter && (
-                    <a href={`https://twitter.com/${social.twitter}`}>
-                      Twitter
-                    </a>
-                  )}
-                  {social.facebook && (
-                    <a href={`https://www.facebook.com/${social.facebook}`}>
-                      Facebook
-                    </a>
-                  )}
-                  {social.linkedin && (
-                    <a href={`https://www.linkedin.com/in/${social.linkedin}/`}>
-                      LinkedIn
-                    </a>
-                  )}
-                </p>
               </div>
             </div>
           </div>
