@@ -1,11 +1,15 @@
 body.dark {
   background-color: $dark-background-color;
-  text-shadow: $dark-text-shadow;
   color: $dark-light-font-color;
 
   // home
   .home-header {
     color: $dark-light-font-color;
+  }
+
+  .top {
+    background: $dark-background-color;
+    color: $top-header-text-color-light;
   }
 
   .bio {
@@ -47,12 +51,10 @@ body.dark {
   .thumbnail {
     h3 {
       color: $dark-light-font-color;
+      font-family: Inter, serif;
     }
     p {
       color: $dark-middle-font-color;
-    }
-    &:hover {
-      text-shadow: $dark-hover-text-shadow;
     }
   }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
 import './index.scss'
@@ -24,9 +24,9 @@ export const Bio = () => (
               />
               <div className="author-name">
                 <span className="author-name-prefix">Written by</span>
-                <Link to={'/about'} className="author-name-content">
+                <a href="https://twitter.com/alesdonoso" target="_blank" className="author-name-content">
                   <span>@{author}</span>
-                </Link>
+                </a>
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
                   {social.github && (
@@ -62,7 +62,7 @@ export const Bio = () => (
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile.png/" }) {
+    avatar: file(absolutePath: { regex: "/profile.jpg/" }) {
       childImageSharp {
         fixed(width: 72, height: 72) {
           ...GatsbyImageSharpFixed

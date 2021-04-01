@@ -48,11 +48,6 @@ export default ({ data, location }) => {
     <Layout location={location} title={siteMetadata.title}>
       <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
       <Bio />
-      <Category
-        categories={categories}
-        category={category}
-        selectCategory={selectCategory}
-      />
       <Contents
         posts={posts}
         countOfInitialPost={countOfInitialPost}

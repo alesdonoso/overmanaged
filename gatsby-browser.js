@@ -1,6 +1,6 @@
 // custom typefaces
-require('typeface-noto-sans-kr')
-require('typeface-catamaran')
+require('typeface-merriweather')
+require('typeface-inter')
 
 // polyfill
 require('intersection-observer')

@@ -1,14 +1,13 @@
 @import '../../styles/variables.scss';
 
 .bio {
-  margin-bottom: 24px;
+  margin-bottom: 5rem;
 
   .author-description {
     display: flex;
   }
 
   .author-image {
-    margin-top: 12px;
     margin-right: 12px;
     margin-bottom: 0;
     min-width: 72px;
@@ -21,16 +20,17 @@
 
   .author-name-content {
     display: inline-block;
-    font-size: 95%;
     padding: 2px 6px;
     font-weight: bolder;
     border-radius: 8px;
     transform-origin: center;
-    animation: flutter 2s infinite linear;
+    &:hover {
+      animation: flutter 1s infinite linear;
+    }
   }
 
   .author-introduction {
-    margin-top: 4px;
+    margin-top: 1rem;
     font-size: 80%;
     line-height: 1.4;
   }
