@@ -12,6 +12,7 @@ import { PostNavigator } from '../components/post-navigator'
 import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
+import './index.scss'
 import 'katex/dist/katex.min.css'
 
 export default ({ data, pageContext, location }) => {
@@ -29,8 +30,10 @@ export default ({ data, pageContext, location }) => {
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />
       <PostTitle title={postTitle} />
-      <PostDate date={date} />
-      <span>{post.fields.readingTime.text}</span>
+      <div className="post-information">
+        <PostDate date={date} />
+        <p>&nbsp; · &nbsp;{post.fields.readingTime.text}</p>
+      </div>
       <PostContainer html={post.html} />
       <SocialShare title={postTitle} author={author} />
       <Bio />

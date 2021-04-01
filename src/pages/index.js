@@ -1,8 +1,7 @@
 import { graphql } from 'gatsby'
 import _ from 'lodash'
-import React, { useMemo } from 'react'
+import React from 'react'
 import { Bio } from '../components/bio'
-import { Category } from '../components/category'
 import { Contents } from '../components/contents'
 import { Head } from '../components/head'
 import { HOME_TITLE } from '../constants'
@@ -24,10 +23,6 @@ export default ({ data, location }) => {
   const { siteMetadata } = data.site
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
-  const categories = useMemo(
-    () => _.uniq(posts.map(({ node }) => node.frontmatter.category)),
-    []
-  )
   const [count, countRef, increaseCount] = useRenderedCount()
   const [category, selectCategory] = useCategory()
 
