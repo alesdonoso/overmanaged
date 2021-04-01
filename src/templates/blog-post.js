@@ -9,8 +9,6 @@ import { PostContainer } from '../components/post-container'
 import { SocialShare } from '../components/social-share'
 import { Bio } from '../components/bio'
 import { PostNavigator } from '../components/post-navigator'
-import { Disqus } from '../components/disqus'
-import { Utterances } from '../components/utterances'
 import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
@@ -24,8 +22,7 @@ export default ({ data, pageContext, location }) => {
 
   const post = data.markdownRemark
   const metaData = data.site.siteMetadata
-  const { title, comment, siteUrl, author } = metaData
-  const { disqusShortName, utterances } = comment
+  const { title, author } = metaData
   const { title: postTitle, date } = post.frontmatter
 
   return (
@@ -37,15 +34,6 @@ export default ({ data, pageContext, location }) => {
       <SocialShare title={postTitle} author={author} />
       <Bio />
       <PostNavigator pageContext={pageContext} />
-      {!!disqusShortName && (
-        <Disqus
-          post={post}
-          shortName={disqusShortName}
-          siteUrl={siteUrl}
-          slug={pageContext.slug}
-        />
-      )}
-      {!!utterances && <Utterances repo={utterances} />}
     </Layout>
   )
 }
