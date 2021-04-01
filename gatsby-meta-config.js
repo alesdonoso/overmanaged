@@ -13,8 +13,5 @@ module.exports = {
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
   },
-  share: {
-    facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
-  },
   ga: '0', // Add your google analytics tranking ID
 }
