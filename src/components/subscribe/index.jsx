@@ -1,75 +1,69 @@
-import addToMailchimp from 'gatsby-plugin-mailchimp'
 import React, { useState } from 'react'
+import axios from 'axios'
 
 export const SubscribeForm = () => {
-  const [status, setStatus] = useState(null)
-  const [email, setEmail] = useState('')
-
-  //FORM_URL should be the same as the form action url pointed out above
   const FORM_URL = `https://getform.io/f/a47d62f7-0f6e-4067-8fde-a83299f010be`
 
-  const handleSubmit = async e => {
-    e.preventDefault()
-    const data = new FormData(e.target)
-    try {
-      const response = await fetch(FORM_URL, {
-        method: 'post',
-        body: data,
-        headers: {
-          accept: 'application/json',
-        },
-      })
-      setEmail('')
-      const json = await response.json()
-      if (json.status === 'success') {
-        setStatus('SUCCESS')
-        return
-      }
-    } catch (err) {
-      setStatus('ERROR')
-      console.log(err)
+  const [serverState, setServerState] = useState({
+    submitting: false,
+    status: null,
+  })
+  const handleServerResponse = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg },
+    })
+    if (ok) {
+      form.reset()
     }
   }
-
-  const handleInputChange = event => {
-    const { value } = event.target
-    setEmail(value)
+  const handleOnSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    setServerState({ submitting: true })
+    axios({
+      method: 'post',
+      url: FORM_URL,
+      data: new FormData(form),
+    })
+      .then(r => {
+        handleServerResponse(true, 'Thanks!', form)
+      })
+      .catch(r => {
+        handleServerResponse(false, r.response.data.error, form)
+      })
   }
-
   return (
-    <div className="sub">
-      <h2>Join My Newsletter</h2>
-      <p>
-        If you've found any of my articles useful, subscribe to receive more
-        quality articles straight to your inbox.
-      </p>
+    <div>
+      <div class="col-md-8 mt-5">
+        <h3>Getform.io Gatsby Form Example</h3>
+        <form onSubmit={handleOnSubmit} autocomplete="off">
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              required="required"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <button
+              type="submit"
+              class="btn btn-primary"
+              disabled={serverState.submitting}
+            >
+              Submit
+            </button>
+          </div>
 
-      {status === 'SUCCESS' && <p>Please go confirm your subscription!</p>}
-      {status === 'ERROR' && <p>Oops, Something went wrong! try again.</p>}
-
-      <form
-        className="sub__form"
-        action={FORM_URL}
-        method="post"
-        onSubmit={handleSubmit}
-      >
-        <input
-          type="email"
-          aria-label="Your email"
-          //The name attribute should be the same as on you selected form.
-          name="email_address"
-          placeholder="Your email address"
-          onChange={handleInputChange}
-          value={email}
-          required
-        />
-
-        <button type="submit">Subscribe</button>
-      </form>
-
-      <p className="sub__tag">
-        I won't send you spam and you can unsubscribe at any time
-      </p>
+          {serverState.status && (
+            <p className={!serverState.status.ok ? 'errorMsg' : ''}>
+              {serverState.status.msg}
+            </p>
+          )}
+        </form>
+      </div>
     </div>
   )
 }
