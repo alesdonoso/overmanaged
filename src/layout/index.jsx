@@ -1,5 +1,6 @@
 import React from 'react'
 import { Header } from '../components/header'
+import { Footer } from '../components/footer'
 import { ThemeSwitch } from '../components/theme-switch'
 import { rhythm } from '../utils/typography'
 
@@ -29,6 +30,7 @@ export const Layout = ({ title, children }) => {
           <ThemeSwitch />
         </div>
         {children}
+        <Footer />
       </div>
     </React.Fragment>
   )
