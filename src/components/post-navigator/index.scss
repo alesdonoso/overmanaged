@@ -18,5 +18,9 @@
     font-size: 12px;
     opacity: 0.8;
     font-family: Inter, sans-serif;
+    &:hover {
+      background: #8d4791 !important;
+      transition: 0.3s;
+    }
   }
 }
