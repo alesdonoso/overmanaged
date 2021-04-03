@@ -66,7 +66,7 @@ module.exports = {
       options: {
         trackingId: metaConfig.ga,
         gtagConfig: {
-          anonymize_i: true,
+          anonymize_ip: true,
           cookie_expires: 0,
         },
         pluginConfig: {
