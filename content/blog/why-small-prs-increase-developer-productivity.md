@@ -5,8 +5,6 @@ category: ''
 draft: false
 ---
 
-_Originally posted in [Medium](https://alesdonoso.medium.com/why-small-prs-increase-developer-productivity-577ad60ca360)._
-
 Let’s be clear: all of us have dealt with a PR review with tons of lines modified. No one wants to review that kind of PRs, it could be annoying and you probably are not going to give a good look at everything. Here starts the malicious workflow.
 
 Some time ago, a friend of mine, [Jesús Darío](https://jsdario.medium.com/), wrote about [How to make Great Code Reviews](https://itnext.io/how-to-make-great-code-reviews-9fb7d84b77e8). I’d recommend you take a look at the article, it is an easy and understandable approach to greatly improve your review workflow.

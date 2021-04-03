@@ -5,8 +5,6 @@ category: ''
 draft: false
 ---
 
-_Originally posted in [Medium](https://medium.com/swlh/the-importance-of-using-good-coding-practices-343c5a91e570)._
-
 In code development, as in any other kind of job, it’s very important to organize work, structure efforts and prioritize tasks with the only purpose of having better results.
 
 Although it’s true that there are several different established practices for a set of programming languages, they are not universalized among programmers and engineers to establish a series of guidelines and make processes follow a logical structure — as for the artisanal process _itself_.

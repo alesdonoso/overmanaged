@@ -5,8 +5,6 @@ category: ''
 draft: false
 ---
 
-_Originally posted and featured in [Medium](https://alesdonoso.medium.com/what-ive-learned-in-the-earlier-months-of-a-startup-my-15-tips-19d3f431d443)._
-
 > _As a Co-Founder of a Startup, I’ve acquired certain knowledge that I’d like to share with you. 15 tips that could help you a lot._
 
 ![photo by room - unsplash](https://miro.medium.com/max/700/0*eRHVJcXsKztEx9IR)

@@ -5,9 +5,7 @@ category: ''
 draft: false
 ---
 
-_Originally posted in [Medium](https://alesdonoso.medium.com/the-imposter-syndrom-and-the-talent-c2c1f242b082)._
-
-![Photo by jesse orrico on Unsplash](https://miro.medium.com/max/700/0*0nWj4Q3GpI5z2mi4)
+![](https://miro.medium.com/max/700/0*0nWj4Q3GpI5z2mi4)
 
 Once a teacher asked all the students during a class: **do you think you are talented people?** The students began to look at each other, stunned and in silence, in front of the question that the teacher had just thrown.
 
