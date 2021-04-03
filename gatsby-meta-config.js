@@ -1,6 +1,6 @@
 module.exports = {
   title: `Over Managed`,
-  description: `Blog posted about ...`,
+  description: `Personal thoughts about the world of the Product Management.`,
   author: `alesdonoso`,
   introduction: `A Product Management blog thought to underline things.`,
   siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url

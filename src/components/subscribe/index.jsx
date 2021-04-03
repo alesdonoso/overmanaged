@@ -38,7 +38,11 @@ export const SubscribeForm = () => {
   return (
     <div>
       <div class="form">
-        <h3>Getform.io Gatsby Form Example</h3>
+        <div>
+          <h3>Get notified when I write new posts.</h3>
+          <p>No spam.</p>
+          <p>Unsubscribe at any time.</p>
+        </div>
         <form onSubmit={handleOnSubmit} autocomplete="off">
           <input
             type="email"

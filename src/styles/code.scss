@@ -20,6 +20,16 @@
 
 blockquote {
   color: $blockquote-text-color;
+  font-size: 1.2rem;
+  margin: 2.2rem 0;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+p {
+  margin: 1.5rem 0;
 }
 
 code[class*='language-'],
