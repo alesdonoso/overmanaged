@@ -1,7 +1,6 @@
 ---
 title: 'The Imposter Syndrome and the Talent.'
 date: 2021-3-26 12:00:00
-category: ''
 draft: false
 featured: images/imposter_head.jpg
 ---

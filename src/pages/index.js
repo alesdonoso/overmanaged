@@ -5,7 +5,6 @@ import { Bio } from '../components/bio'
 import { Contents } from '../components/contents'
 import { Head } from '../components/head'
 import { HOME_TITLE } from '../constants'
-import { useCategory } from '../hooks/useCategory'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 import { useRenderedCount } from '../hooks/useRenderedCount'
 import { useScrollEvent } from '../hooks/useScrollEvent'
@@ -24,7 +23,6 @@ export default ({ data, location }) => {
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
   const [count, countRef, increaseCount] = useRenderedCount()
-  const [category] = useCategory()
 
   useIntersectionObserver()
   useScrollEvent(() => {
@@ -47,7 +45,6 @@ export default ({ data, location }) => {
         posts={posts}
         countOfInitialPost={countOfInitialPost}
         count={count}
-        category={category}
       />
     </Layout>
   )
@@ -65,7 +62,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { category: { ne: null }, draft: { eq: false } } }
+      filter: { frontmatter: { draft: { eq: false } } }
     ) {
       edges {
         node {
@@ -79,7 +76,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            category
             draft
           }
         }

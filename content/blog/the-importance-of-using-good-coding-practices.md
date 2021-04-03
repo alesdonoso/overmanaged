@@ -1,7 +1,6 @@
 ---
 title: 'The Importance of using Good Coding Practices'
 date: 2019-7-15 12:00:00
-category: ''
 draft: false
 featured: images/importance_head.png
 ---

@@ -12,7 +12,6 @@
     "gatsby-image": "^2.0.34",
     "gatsby-plugin-feed": "^2.1.0",
     "gatsby-plugin-google-analytics": "^2.0.17",
-    "gatsby-plugin-google-gtag": "^3.2.0",
     "gatsby-plugin-lodash": "^3.0.5",
     "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-manifest": "^2.0.24",
@@ -48,10 +47,8 @@
     "react-typography": "^0.16.13",
     "smooth-scroll": "^16.0.0",
     "smoothscroll-polyfill": "^0.4.4",
-    "typeface-catamaran": "0.0.54",
     "typeface-inter": "^3.15.1",
     "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.54",
     "typeface-noto-sans-kr": "0.0.63",
     "typography": "^0.16.17",
     "typography-theme-github": "^0.16.18"

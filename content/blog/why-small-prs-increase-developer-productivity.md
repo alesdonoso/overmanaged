@@ -1,7 +1,6 @@
 ---
 title: 'Why small PRs increase developer productivity.'
 date: 2020-10-01 12:00:00
-category: ''
 draft: false
 featured: images/good_code_head.jpg
 ---

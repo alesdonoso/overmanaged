@@ -13,7 +13,6 @@ export const SocialShare = ({ title, author }) => {
     return shareToTwitter(window.location.href, text)
   }
 
-
   return (
     <div className="social-share">
       <TwitterIcon onClick={onClickTwitterIcon} />
