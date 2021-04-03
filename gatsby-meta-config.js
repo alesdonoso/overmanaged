@@ -7,7 +7,7 @@ module.exports = {
   icon: `static/favicon.svg`, // Add your favicon
   keywords: [`blog`, `product`, `management`],
   configs: {
-    countOfInitialPost: 5, // Config your initial count of post
+    countOfInitialPost: 10, // Config your initial count of post
   },
-  ga: '0', // Add your google analytics tranking ID
+  ga: 'G-T8ZPJ8NT9D', // Add your google analytics tranking ID
 }
