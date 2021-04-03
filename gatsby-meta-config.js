@@ -3,7 +3,7 @@ module.exports = {
   description: `Personal thoughts about the world of the Product Management.`,
   author: `alesdonoso`,
   introduction: `A Product Management blog thought to underline things.`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://overmanaged.xyz/canonical-link`, // Your blog site url
   icon: `static/favicon.svg`, // Add your favicon
   keywords: [`blog`, `product`, `management`],
   configs: {

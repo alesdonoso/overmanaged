@@ -26,10 +26,18 @@ export default ({ data, pageContext, location }) => {
   const metaData = data.site.siteMetadata
   const { title, author } = metaData
   const { title: postTitle, date } = post.frontmatter
+  const image = post.frontmatter.image
+    ? post.frontmatter.image.childImageSharp.resize
+    : null
 
   return (
     <Layout location={location} title={title}>
-      <Head title={postTitle} description={post.excerpt} />
+      <Head
+        title={postTitle}
+        description={post.excerpt}
+        image={image}
+        pathname={location.pathname}
+      />
       <PostTitle title={postTitle} />
       <div className="post-information">
         <PostDate date={date} />
@@ -60,6 +68,15 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        image: featured {
+          childImageSharp {
+            resize(width: 1200) {
+              src
+              height
+              width
+            }
+          }
+        }
       }
       fields {
         slug
