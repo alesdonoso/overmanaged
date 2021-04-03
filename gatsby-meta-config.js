@@ -9,5 +9,5 @@ module.exports = {
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
   },
-  ga: 'G-KL7WR74DE8', // Add your google analytics tranking ID
+  ga: 'UA-151998238-2', // Add your google analytics tranking ID
 }
