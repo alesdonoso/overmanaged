@@ -24,7 +24,7 @@ export default ({ data, location }) => {
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
   const [count, countRef, increaseCount] = useRenderedCount()
-  const [category, selectCategory] = useCategory()
+  const [category] = useCategory()
 
   useIntersectionObserver()
   useScrollEvent(() => {
