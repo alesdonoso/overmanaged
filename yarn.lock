@@ -6351,14 +6351,6 @@ gatsby-plugin-google-analytics@^2.0.17:
     "@babel/runtime" "^7.12.5"
     minimatch "3.0.4"
 
-gatsby-plugin-google-gtag@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-3.2.0.tgz#8326133ef676a9059a63091a11c6b786ac21a657"
-  integrity sha512-NmKv9bRkdxgmkGUIpK1Tk0sgnggU6WDY+oH+nQG1+gs1yJqW6g1d3zzFKf/m0c5A/44Eqb7f+6h8PTjIL/XoVw==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    minimatch "^3.0.4"
-
 gatsby-plugin-lodash@^3.0.5:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-lodash/-/gatsby-plugin-lodash-3.10.0.tgz#36a97c59afe3660b427c90e80edb808317ef983e"
@@ -14337,11 +14329,6 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-catamaran@0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-catamaran/-/typeface-catamaran-0.0.54.tgz#080f7e87df87a4106a40cbdad2520bbe8d02391c"
-  integrity sha512-7O1tA09N76y3D8H1ONhTX9h8Qn6dedm0RYVN8qGHiVp9DZSxPR5l1B/AvQlcnI/680lBFP4gt0P7EXCi2m12uw==
-
 typeface-inter@^3.15.1:
   version "3.15.1"
   resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.15.1.tgz#bbd39cc26ed1c7b3a2bc797996a9d053b507e727"
@@ -14351,11 +14338,6 @@ typeface-merriweather@0.0.72:
   version "0.0.72"
   resolved "https://registry.yarnpkg.com/typeface-merriweather/-/typeface-merriweather-0.0.72.tgz#2b990f5293252052d51d170c82d3892319ff0555"
   integrity sha512-gO0+fcZ1fTyKUsYY1ltYOOTI6FmBGeEdyIfeQg9NL8aInndk0feiJJVJsKHm/DiyYrnQEezraAQhz/KQoqMGtw==
-
-typeface-montserrat@0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.54.tgz#3fc338db6428d73485b75aa7bd2af8c9a55b9ab3"
-  integrity sha512-Typhap0PWT299+Va0G/8ZtycHMXrH4gBWKfiW977KEBx5rXUUCa70gvqLx1fdA0WAo6bhSAQmo8uc+QFAmjPww==
 
 typeface-noto-sans-kr@0.0.63:
   version "0.0.63"
