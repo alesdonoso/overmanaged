@@ -2,7 +2,7 @@
 title: 'Why small PRs increase developer productivity.'
 date: 2020-10-01 12:00:00
 draft: false
-featured: images/good_code_head.jpg
+featured: ./images/good_code_head.jpg
 ---
 
 Let’s be clear: all of us have dealt with a PR review with tons of lines modified. No one wants to review that kind of PRs, it could be annoying and you probably are not going to give a good look at everything. Here starts the malicious workflow.

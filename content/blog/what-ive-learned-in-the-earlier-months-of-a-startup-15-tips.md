@@ -2,7 +2,7 @@
 title: 'What I’ve learned in the earlier months of a Startup — 15 tips.'
 date: 2019-9-18 12:00:00
 draft: false
-featured: images/startup_tips_head.jpg
+featured: ./images/startup_tips_head.jpg
 ---
 
 > _As a Co-Founder of a Startup, I’ve acquired certain knowledge that I’d like to share with you. 15 tips that could help you a lot._
